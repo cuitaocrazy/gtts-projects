@@ -5,7 +5,7 @@ function speedConventer (rangeValue: string) {
   return (parseInt(rangeValue) + 1) / 10
 }
 
-function coSpeedConventer (speed: number) {
+function speedCoconventer (speed: number) {
   return (speed * 10) - 1
 }
 
@@ -33,6 +33,7 @@ function useKeyboard (range: React.RefObject<HTMLInputElement>, setSpeed: React.
     }
   }, [onKeyDownHandler])
 }
+
 export function useAudioSpeed () {
   const [speed, setSpeed] = useState(1)
   const inputRef = React.useRef<HTMLInputElement>(null)
@@ -46,7 +47,7 @@ export function useAudioSpeed () {
   const inputClass = classNames('border-2', 'rounded')
 
   const inputRange = <div className="flex items-center">
-      <input ref={inputRef} type="range" defaultValue={coSpeedConventer(speed)} className={inputClass} min="0" max="19" onChange={handleSpeedChange}></input>
+      <input ref={inputRef} type="range" defaultValue={speedCoconventer(speed)} className={inputClass} min="0" max="19" onChange={handleSpeedChange}></input>
       <span className="text-xs w-8">{speed}x</span>
     </div>
 
