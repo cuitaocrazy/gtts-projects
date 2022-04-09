@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+  @apply flex flex-col h-screen space-y-1 p-2;
+}
+
+.controls {
+  @apply flex;
+}
+
+.controls > button {
+  @apply flex-1 disabled:opacity-75;
+  @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2;
+}

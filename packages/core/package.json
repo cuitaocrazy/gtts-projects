@@ -1,0 +1,11 @@
+{
+  "name": "@gtts/core",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@gtts/cli",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "bin": {
+    "gtts": "bin/cli.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@gtts/core": "*",
+    "minimist": "^1.2.6"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.2",
+    "@types/node": "^17.0.23"
+  }
+}
