@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "clean": "rimraf \"packages/**/lib\" \"packages/**/*.tsbuildinfo\"",
-    "compile": "tsc -b tsconfig.build.json",
+    "compile": "tsc -b tsconfig.build.json && npm run compile -w @gtts/desktop-app",
     "prepare": "npm run compile",
     "install:cli": "npm i ./packages/cli -g",
     "uninstall:cli": "npm uninstall -g ./packages/cli",

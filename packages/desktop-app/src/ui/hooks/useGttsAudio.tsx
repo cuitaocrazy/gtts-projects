@@ -31,7 +31,7 @@ export function useGttsAudio (text: string = '', speed: number) {
       setReady(false)
       window.myAPI.makeAudio(text)
         .then(data => {
-          const blob = new Blob([data], { type: 'audio/mp3' })
+          const blob = new Blob(data, { type: 'audio/mp3' })
           const url = URL.createObjectURL(blob)
 
           setReady(true)

@@ -9,6 +9,7 @@
     "start": "electron ."
   },
   "dependencies": {
+    "@gtts/core": "*",
     "classnames": "^2.3.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"

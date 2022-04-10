@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 interface Window {
   myAPI: {
-    makeAudio: (content: string) => Promise<string>
+    makeAudio: (content: string) => Promise<Int8Array[]>
   }
 }
 
