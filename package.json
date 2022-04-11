@@ -9,7 +9,7 @@
     "compile": "tsc -b tsconfig.build.json && npm run compile -w @gtts/desktop-app",
     "prepare": "npm run compile",
     "install:cli": "npm i ./packages/cli -g",
-    "uninstall:cli": "npm uninstall -g ./packages/cli",
+    "uninstall:cli": "npm uninstall -g @gtts/cli",
     "start:app": "npm start -w @gtts/desktop-app",
     "test": "jest"
   },
