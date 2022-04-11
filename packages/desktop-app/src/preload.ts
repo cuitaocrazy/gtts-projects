@@ -14,7 +14,6 @@ contextBridge.exposeInMainWorld('myAPI', {
   makeAudio: async function (content: string) {
     const buffers: Buffer[] = []
 
-    console.log('123')
     for await (const buffer of getAudio(content)) {
       buffers.push(buffer)
     }
