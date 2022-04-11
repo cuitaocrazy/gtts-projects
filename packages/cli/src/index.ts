@@ -9,7 +9,6 @@ async function run () {
   const opts: GttsOptions = {
     lang: params.lang || params.l || 'en',
     slow: params.slow || params.s || false,
-    tld : params.tld || params.d || 'cn',
   }
 
   const inputFilename = params.i || params.input
